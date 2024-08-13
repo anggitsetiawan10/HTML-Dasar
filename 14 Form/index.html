@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h2>Form</h2>
+    <form>
+        <label for="namadepan">Nama depan : <input type="text"></label><br>
+        <label for="namabelakang">Nama belakang : <input type="text"></label><br>
+        <label for="password">Pasword : <input type="password"></label><br>
+
+        <h4>WNI Radio button</h4>
+        <label for="ya">
+            <input type="radio" name="WNI" value="Ya">
+            Ya
+        </label><br>
+        <label for="tidak">
+            <input type="radio" name="WNI" value="Tidak">
+            Tidak
+        </label>
+
+        <h4>Cerita favorit : (CheckBox)</h4>
+        <label for="sejarah">
+            <input type="checkbox" name="cerita" value="sejarah">
+            Sejarah
+        </label><br>
+        <label for="Fantasy">
+            <input type="checkbox" name="cerita" value="fantasy">
+            Fantasy
+        </label><br>
+
+        <h4>Drop list</h4>
+        <label for="pekerjaan">Pilih Pekerjaan:</label>
+        <select name="pekerjaan" id="pekerjaan">
+        <option value="mahasiswa">Mahasiswa</option>
+        <option value="pegawai">Pegawai</option>
+        <option value="pengusaha">Pengusaha</option>
+        <option value="freelancer">Freelancer</option>
+        <option value="lainnya">Lainnya</option>
+    </select>
+    <h4>Upload file</h4>
+    <label for="upload_foto">
+        Upload foto
+        <input type="file" name="foto" value="upload_foto">
+    </label>
+    <br>
+    <input type="button" name="Submit" value="Simpan">
+    </form>
+    
+</body>
+</html>
